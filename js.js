@@ -21,10 +21,10 @@ function kreni(){
  
     for (let i = 0; i < 42; i++) {
         if(tabela[i] != null){
-            document.getElementById("main").innerHTML += '<div id="40" class="polje"><p>' + tabela[i] + '</p></div>';
+            document.getElementById("main").innerHTML += '<div class="polje"><p>' + tabela[i] + '</p></div>';
         }
         else{
-            document.getElementById("main").innerHTML += '<div id="40" class="polje"><p> </p></div>';
+            document.getElementById("main").innerHTML += '<div class="polje"><p> </p></div>';
         }
  
     }

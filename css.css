@@ -7,6 +7,9 @@ body{
     border: 1px solid black;
     padding-top:1.7rem;
 }
+.danas{
+    background-color: gold;
+}
 #main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

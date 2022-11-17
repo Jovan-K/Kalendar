@@ -13,19 +13,13 @@
 <!-- Malo smo lose procitali pa krece od nedelje i ide do subote, takodje radi i za godine od nove ere -->
 <!--Mateja Nesic IV-1 dodao min i max vrednost za mesec-->
 
-<body>
+<body onload="load()">
     <p>Unesi mesec i godinu: </p>
-    <input type="number" id="mesec" min="1" max="12"> <input type="text" id="godina">
+    <input type="number" id="mesec" min="1" max="12"> <input type="number" id="godina" min="0" max="3000">
     <button onclick="kreni()">Kreni</button>
     <br><br>
     <div class="main" id="main">
-        <div id="ned" class="polje">Ned</div>
-        <div id="pon" class="polje">Pon</div>
-        <div id="uto" class="polje">Uto</div>
-        <div id="sre" class="polje">Sre</div>
-        <div id="cet" class="polje">Čet</div>
-        <div id="pet" class="polje">Pet</div>
-        <div id="sub" class="polje">Sub</div>
+
     </div>
     <script src="js.js"></script>
 </body>

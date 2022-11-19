@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   text-align: center;
   width: 25%;
-  font-size: 32px;
+  font-size: 48px;
   background: linear-gradient(45deg, #002bff, #7a00ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -43,11 +43,10 @@ body {
   margin: 20px auto;
 }
 #mesec {
-  padding: 10px;
-  flex: 0 auto;
+  padding: 10px 0 10px 80px;
 }
 #godina {
-  padding: 10px;
+  padding: 10px 0 10px 80px;
   left: 10px;
 }
 button {
@@ -157,3 +156,13 @@ img {
   width: 30%;
   height: 30%;
 }
+@media only screen and (max-width: 1520px) {
+  #main {
+    width: 70%;
+    height: 90vh;
+    scale: 0.8;
+  }
+  .tekst {
+    font-size: 32px;
+  }
+} ;

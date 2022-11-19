@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="css.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalendar</title>
-</head>
-<!-- Malo smo lose procitali pa krece od nedelje i ide do subote, takodje radi i za godine od nove ere -->
-<!--Mateja Nesic IV-1 dodao min i max vrednost za mesec-->
+  </head>
+  <!-- Malo smo lose procitali pa krece od nedelje i ide do subote, takodje radi i za godine od nove ere -->
+  <!--Mateja Nesic IV-1 dodao min i max vrednost za mesec-->
 
-<body onload="load()">
-    <p>Unesi mesec i godinu: </p>
-    <input type="number" id="mesec" min="1" max="12"> <input type="number" id="godina" min="0" max="3000">
-    <button onclick="kreni()">Kreni</button>
-    <br><br>
-    <div class="main" id="main">
-
+  <body onload="load()">
+    <p class="tekst">Unesi mesec i godinu:</p>
+    <div class="unos">
+      <input type="number" id="mesec" min="1" max="12" />
+      <input type="number" id="godina" min="0" max="3000" />
+      <button onclick="kreni()">Kreni</button>
     </div>
-    <script src="js.js"></script>
-</body>
 
+    <br /><br />
+    <div class="main" id="main"></div>
+    <script src="js.js"></script>
+  </body>
 </html>

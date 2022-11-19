@@ -1,27 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
+  background-color: #010101;
 }
-.polje {
-  text-align: center;
-  width: 100%;
-  border: 1px solid black;
-  padding-top: 1.7rem;
-}
-.danas {
-  background-color: gold;
-}
+
 #main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(7, 1fr);
-  height: 50vh;
+  column-gap: 3px;
+  row-gap: 3px;
+  height: 70vh;
   width: 50%;
   margin: 0 auto;
+  padding: 3px;
+  background: linear-gradient(45deg, #002bff, #7a00ff);
 }
 .tekst {
+  margin: 0 auto;
   text-align: center;
+  width: 25%;
   font-size: 32px;
-  background-image: linear-gradient(0deg, rgb(17, 0, 255), rgb(255, 0, 0));
+  background: linear-gradient(45deg, #002bff, #7a00ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+.unos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin: 20px auto;
+}
+#mesec {
+  padding: 10px;
+  flex: 0 auto;
+}
+#godina {
+  padding: 10px;
+  left: 10px;
+}
+button {
+  padding: 10px;
+  background-image: linear-gradient(45deg, #002bff, #7a00ff);
+  border-radius: 10px;
+}
+input {
+  border-image-source: linear-gradient(
+    0deg,
+    #006eff,
+    #002bff,
+    #3700ff,
+    #8c00ff
+  );
+  border-width: 2px;
+  border-image-slice: 1;
+}
+.polje {
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+  transition: 0.3s;
+  outline: none;
+  color: #fff;
+  background: rgba(219, 209, 209, 0.603);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+  font-family: "Cyber", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.polje:before {
+  content: "";
+  background: linear-gradient(45deg, #00ffd5, #002bff, #7a00ff, #ff00c8);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(10px);
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.polje:active {
+  color: #000;
+}
+
+.polje:active:after {
+  background: transparent;
+}
+
+.polje:hover:before {
+  opacity: 1;
+}
+
+.polje:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+img {
+  width: 30%;
+  height: 30%;
 }

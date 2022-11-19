@@ -1,20 +1,27 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-.polje{
-    text-align: center;
-    width: 100%;
-    border: 1px solid black;
-    padding-top:1.7rem;
+.polje {
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  padding-top: 1.7rem;
 }
-.danas{
-    background-color: gold;
+.danas {
+  background-color: gold;
 }
-#main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(7,1fr); 
-    height: 50vh;
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  height: 50vh;
+  width: 50%;
+  margin: 0 auto;
 }
- 
- 
+.tekst {
+  text-align: center;
+  font-size: 32px;
+  background-image: linear-gradient(0deg, rgb(17, 0, 255), rgb(255, 0, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

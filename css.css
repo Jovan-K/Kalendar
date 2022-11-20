@@ -50,7 +50,7 @@ body {
   left: 10px;
 }
 button {
-  padding: 10px;
+  padding: 10px 20px 10px 20px;
   background-image: linear-gradient(45deg, #002bff, #7a00ff);
   border-radius: 10px;
 }
@@ -160,9 +160,11 @@ img {
   #main {
     width: 70%;
     height: 90vh;
-    scale: 0.8;
   }
   .tekst {
     font-size: 32px;
+  }
+  button {
+    padding: 10px;
   }
 } ;
